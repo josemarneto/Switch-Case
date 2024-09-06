@@ -10,8 +10,31 @@ Código Classificação
 Qualquer outro código Inválido*/
 
 //entrada
-    const cdg
+    const cdgProduto = Number(prompt(`informe o codigo do produto`));
+    let classe = Number(0)
 //processamento
-
+    switch (cdgProduto) {
+        case 1: 
+            classe = `Alimento não-perecível`
+            break;
+        case 2: 
+        case 3:
+        case 4: 
+            classe = `Alimento perecível`
+            break;
+        case 5: 
+        case 6: 
+            classe = `Vestuário`
+        case 7: 
+            classe = `Higiene pessoal`
+        case 8: 
+        case 9: 
+        case 10: 
+            classe = `Utensílios domésticos`
+            break;
+        default: 
+            alert("invalido")
+    }
 //saida
+    document.write(`o produto é classificado como: ${classe}`);
 </script>
